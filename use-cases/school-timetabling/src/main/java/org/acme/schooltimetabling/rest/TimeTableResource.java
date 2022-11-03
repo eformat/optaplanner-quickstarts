@@ -54,6 +54,7 @@ public class TimeTableResource {
                 this::findById,
                 this::save);
     }
+//                // Hard constraints
 
     public SolverStatus getSolverStatus() {
         return solverManager.getSolverStatus(SINGLETON_TIME_TABLE_ID);

@@ -190,9 +190,9 @@ public class DemoDataGenerator {
             lessonList.add(new Lesson("Physical education", "C. Lewis", "12th grade"));
         }
 
-        Lesson lesson = lessonList.get(0);
-        lesson.setTimeslot(timeslotList.get(0));
-        lesson.setRoom(roomList.get(0));
+        //Lesson lesson = lessonList.get(0);
+        //lesson.setTimeslot(timeslotList.get(0));
+        //lesson.setRoom(roomList.get(0));
 
         lessonRepository.persist(lessonList);
     }

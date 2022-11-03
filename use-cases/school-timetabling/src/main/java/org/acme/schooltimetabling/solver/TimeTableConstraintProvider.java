@@ -13,6 +13,7 @@ public class TimeTableConstraintProvider implements ConstraintProvider {
 
     @Override
     public Constraint[] defineConstraints(ConstraintFactory constraintFactory) {
+
         return new Constraint[] {
                 // Hard constraints
                 roomConflict(constraintFactory),
@@ -23,6 +24,17 @@ public class TimeTableConstraintProvider implements ConstraintProvider {
                 teacherTimeEfficiency(constraintFactory),
                 studentGroupSubjectVariety(constraintFactory)
         };
+
+//        return new Constraint[] {
+//                // Hard constraints
+//                roomConflict(constraintFactory),
+//                teacherConflict(constraintFactory),
+//                studentGroupConflict(constraintFactory),
+//                // Soft constraints
+//                teacherRoomStability(constraintFactory),
+//                teacherTimeEfficiency(constraintFactory),
+//                studentGroupSubjectVariety(constraintFactory)
+//        };
     }
 
     Constraint roomConflict(ConstraintFactory constraintFactory) {
